@@ -19,7 +19,6 @@ public class TextUITester {
      * the behavior of the following run method.
      * @param args from the commandline are not used in this example
      */
-
     public static void main(String[] args) {
 
         // 1. Create a new TextUITester object for each test, and
@@ -37,10 +36,9 @@ public class TextUITester {
         else
             System.out.println("Test FAILED.");
     }
-
     /**
      * This is the code being tested by the main method above.
-     * It 1) prints out a welcome message, 
+     * It 1) prints out a welcome message,
      *    2) reads a String, a double, and a character from System.in, and then
      *    3) prints out the string followed by a number that is one greater than that double,
      *       if the character that it read in was a (lower case) 'q'.
@@ -57,7 +55,6 @@ public class TextUITester {
             System.out.println(s + (d + 1.0));
         in.close();
     }
-
     // Below is the code that actually implements the redirection of System.in and System.out,
     // and you are welcome to ignore this code: focusing instead on how the constructor and
     // checkOutput() method is used int he example above.
@@ -82,10 +79,9 @@ public class TextUITester {
         System.setErr(new PrintStream(redirectedErr = new ByteArrayOutputStream()));
         System.setIn(new ByteArrayInputStream(programInput.getBytes()));
     }
-
     /**
      * Call this method after running your test code, to check whether the expected
-     * text was printed out to System.out and System.err.  Calling this method will 
+     * text was printed out to System.out and System.err.  Calling this method will
      * also un-redirect standard io, so that the console can be used as normal again.
      *
      * @return captured text that was printed to System.out and System.err durring test.
@@ -104,3 +100,4 @@ public class TextUITester {
         }
     }
 }
+
