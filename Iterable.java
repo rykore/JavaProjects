@@ -1,7 +1,7 @@
 // --== CS400 Project One File Header ==--
-// Name: Karam Gursahani
-// CSL Username: karam@cs.wisc.edu
-// Email: kdgursahani@wisc.edu
+// Name: Riya Kore
+// CSL Username: kore
+// Email: rykore@wisc.edu
 // Lecture #: 003 @2:25pm
 // Notes to grader: None
 
@@ -12,7 +12,7 @@ import java.util.Spliterator;
  * Implementing this interface allows an object to be the target of the enhanced for statement
  * (sometimes called the "for-each loop" statement).
  *
- * @author karam
+ * @author Riya Kore
  */
 public interface Iterable<ValueType> extends java.lang.Iterable {
 
